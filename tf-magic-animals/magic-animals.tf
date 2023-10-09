@@ -13,8 +13,8 @@ resource "null_resource" "timestamp-trigger" {
     command = "echo Resource updated at: ${self.triggers.value}"
   }
 }
-
-resource "local_file" "foo" {
-  content  = "smth!"
-  filename = "${path.module}/smth.bar"
-}
+#
+#resource "local_file" "foo" {
+#  content  = "smth!"
+#  filename = "${path.module}/smth.bar"
+#}
